@@ -10,8 +10,9 @@ var computerScore=0;
 var buttons = document.querySelectorAll('.choose');  
 var playerScoreEl= document.getElementById('scoreOne');
 var computerScoreEl= document.getElementById('scoreTwo');
-
-
+var pentagone= document.getElementById('pentagone');
+var winnerBox= document.getElementById('winner-box');
+var playAgain= document.getElementById('play-again')
 // Step 1 create a fonction where the computer is picking a rundom choice  (computer choice)
 
 function pickRondomChoice(){
@@ -27,12 +28,24 @@ function pickRondomChoice(){
    button.addEventListener("click",
    () => {
     playerChoice = button.getAttribute('data-choice');
+ 
+ // hide the pentagone and show the player and computer selection
 
+    pentagone.style.display = 'none';
+    winnerBox.style.display = 'flex'
     checkWinner();  
    });
  
 });
 
+// coming back to the pentagone page when the player decide to play again
+
+playAgain.addEventListener("click",() =>{
+
+    pentagone.style.display = 'flex';
+    winnerBox.style.display = 'none';
+
+});
 
 // Step 4 update score number function player
 
@@ -49,6 +62,9 @@ function updateComputerScore(value){
         computerScoreEl.innerHTML = computerScore;
 
 }
+
+
+
 
 
 // step 3 who is the winner function 

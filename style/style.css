@@ -86,7 +86,14 @@ width: 200px;
     height: 150px;
     border:  15px solid;
     text-align: center;
+    box-shadow: 10px black;
 
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.8);
 }
 
 .btn.circle-1 {
@@ -146,25 +153,24 @@ width: 200px;
 
 }
 
-.winner{
-    display: flex;
+.winner-box{
+    display: none;
     justify-content: space-between;
     align-items: center;
     text-align: center;
     width: 1000px;
     margin: 0 auto;
+   
 
 }
 
 .btn-play {
 
     border: 3px solid green;
-
     border-radius: 10px;
     min-width: 150px;
     min-height: 30px;
     color:green;
-   
     text-transform: uppercase;
     padding: 10px 25px;
     font-family: inherit;
@@ -174,7 +180,7 @@ width: 200px;
    
   
 }
-.winner h1{
+.winner-box h1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +190,25 @@ width: 200px;
 
 }
 
-.winner .btn{
+.winner-box .btn{
 transform : scale(1.6);
 margin: 50px;
 }
+
+.winner-box {
+    animation-duration: 1s;
+    animation-name: slidein;
+    overflow:hidden;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
