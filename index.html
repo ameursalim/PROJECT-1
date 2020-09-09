@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <script src="./script.js" type="module"></script>
     <title>ZIMBOUMBAH</title>
 </head>
@@ -25,42 +25,42 @@
         </header>
     </div>
    <section class="pentagone" id="pentagone">
-      <button class="btn  mt-1 circle-1 choose" data-choice = "robot" >
-          <img src="style/images/icon-paper.svg" alt="robot">
+      <button class="btn  mt-1 btn-robot choose" data-choice = "robot" >
+          <img src="./style/images/icon-robot.svg" alt="robot">
       </button>
-      <button class="btn mb-2 circle-2 choose" data-choice="pirate">
-          <img src="style/images/icon-scissors.svg" alt="pirate">
+      <button class="btn mb-2 btn-pirate choose" data-choice="pirate">
+          <img src="./style/images/icon-pirate.svg" alt="pirate">
       </button>
-      <button class="btn  mt-3 circle-3 choose" data-choice="ninja">
-          <img src="style/images/icon-rock.svg" alt="ninja">
+      <button class="btn  mt-3 btn-ninja choose" data-choice="ninja">
+          <img src="./style/images/icon-ninja.svg" alt="ninja">
       </button>
-      <button class="btn ml-4 circle-4 choose" data-choice="monkey">
-        <img src="style/images/icon-spock.svg" alt="monkey">
+      <button class="btn ml-4 btn-monkey choose" data-choice="monkey">
+        <img src="./style/images/icon-monkey.svg" alt="monkey">
     </button>
-    <button class="btn mr-5 circle-5 choose" data-choice="zombie">
-        <img src="style/images/icon-spock.svg" alt="zombie">
+    <button class="btn mr-5 btn-zombie choose" data-choice="zombie">
+        <img src="./style/images/icon-zombie.svg" alt="zombie">
     </button>
    </section>
 
    
 </div>
-<section class="winner-box" id="winner-box">
+<section class="selection-box" id="selection-box">
     <div> 
         <h2>PLAYER PICKED</h2>
-        <button class="btn circle-1 " data-choice = "robot" >
-            <img src="style/images/icon-paper.svg" alt="robot">
+        <button class="btn btn-robot " id="player-selection" >
+            <img src="./style/images/icon-robot.svg" alt="robot">
         </button>
     </div>
     <div> 
-       <h1> PLAYER WIN </h1>
+       <h1 id="result"> YOU WIN</span></h1>
        <button class="btn-play" id="play-again">
        PLAY AGAIN 
     </button>
     </div>
     <div>
         <h2>COMPUTER PICKED</h2>
-        <button class="btn circle-3" data-choice="ninja">
-            <img src="style/images/icon-rock.svg" alt="ninja">
+        <button class="btn btn-ninja" id="computer-selection">
+            <img src="./style/images/icon-ninja.svg" alt="ninja">
     </div>
 
 
