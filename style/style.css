@@ -29,7 +29,7 @@ header{
     justify-content: space-between;
     padding: 30px;
     margin: 100px;
-    min-width: 800px;
+    min-width: 900px;
 }
 
 h1{
@@ -43,19 +43,19 @@ h4{
     font-size: 20px;
     margin:0px;
 }
-.score{
+.score-container{
     background-color: white;
     color: black;
-    padding: 5px 50px;
+    padding: 10px 50px;
     border-radius: 20px;
     text-align: center;
     text-transform: uppercase;
-
+width: 200px;
 }
 
 
 
-.score p{
+.score-container p{
     font-size: 4rem;
     margin:0px;
     font-weight: 700;
@@ -65,10 +65,126 @@ h4{
 .btn-rules{
     border: 2px solid white;
   border-radius: 5px;
-  min-width: 100px;
+  min-width: 150px;
   min-height: 30px;
   color: white;
-  
   background-color: transparent;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  font-family: inherit;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
 
+}
+.btn{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border:  15px solid;
+    text-align: center;
+
+}
+
+.btn.circle-1 {
+    border-color: red;
+   
+
+}
+.mt-1{
+    margin-top: 100px;
+}
+.btn.circle-2{
+    border-color: khaki;
+    
+}
+
+.mb-2{
+    margin-bottom: 100px;
+}
+.btn.circle-3{
+    border-color: blueviolet;
+
+}
+
+.mt-3{
+    margin-top: 100px;
+}
+
+.btn.circle-4{
+    border-color:darkblue;
+  
+
+}
+.ml-4{
+    margin-left: 50px;
+}
+
+.btn.circle-5{
+    border-color: yellow;
+    
+
+}
+.mr-5{
+    margin-right: 50px;
+}
+.pentagone{
+    background-image: url(/style/images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:transparent;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.winner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.btn-play {
+
+    border: 3px solid green;
+
+    border-radius: 10px;
+    min-width: 150px;
+    min-height: 30px;
+    color:green;
+   
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-family: inherit;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+   
+  
+}
+.winner h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    font-size: 5rem;
+
+
+}
+
+.winner .btn{
+transform : scale(1.6);
+margin: 50px;
 }
