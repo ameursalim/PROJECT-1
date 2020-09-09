@@ -127,19 +127,19 @@ function checkWinner (){
     
 // updating the selection box with the choices
 
- function updateSelectionbox ( selectionBox , choice ){
-selectionBox.classlist.remove('btn-robot');
-selectionBox.classlist.remove('btn-pirate');
-selectionBox.classlist.remove('btn-ninja');
-selectionBox.classlist.remove('btn-monkey');
-selectionBox.classlist.remove('btn-zombie');
+//  function updateSelectionbox ( selectionBox , choice ){
+// selectionBox.classlist.remove('btn-robot');
+// selectionBox.classlist.remove('btn-pirate');
+// selectionBox.classlist.remove('btn-ninja');
+// selectionBox.classlist.remove('btn-monkey');
+// selectionBox.classlist.remove('btn-zombie');
 
-selectionBox.classlist.add(`btn-${choice}`);
+// selectionBox.classlist.add(`btn-${choice}`);
 
-const img=selectionBox.querySelector('img');
-img.src = `style/images/icon-${choice}.svg`;
-img.alt= choice;
- };
+// const img=selectionBox.querySelector('img');
+// img.src = `style/images/icon-${choice}.svg`;
+// img.alt= choice;
+//  };
 
 
 
