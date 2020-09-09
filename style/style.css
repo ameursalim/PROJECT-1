@@ -144,7 +144,7 @@ img{
     height:60px;
 }
 .pentagone{
-    background-image: url(./style/images/bg-pentagon.svg);
+    background-image: url(/style/images/bg-pentagon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color:transparent;
