@@ -34,12 +34,13 @@
       <button class="btn  mt-3 btn-ninja choose" data-choice="ninja">
           <img src="./style/images/icon-ninja.svg" alt="ninja">
       </button>
-      <button class="btn ml-4 btn-monkey choose" data-choice="monkey">
-        <img src="./style/images/icon-monkey.svg" alt="monkey">
-    </button>
-    <button class="btn mr-5 btn-zombie choose" data-choice="zombie">
+      <button class="btn ml-4 btn-zombie choose" data-choice="zombie">
         <img src="./style/images/icon-zombie.svg" alt="zombie">
     </button>
+      <button class="btn mr-5 btn-monkey choose" data-choice="monkey">
+        <img src="./style/images/icon-monkey.svg" alt="monkey">
+    </button>
+    
    </section>
 
    
@@ -47,8 +48,8 @@
 <section class="selection-box" id="selection-box">
     <div> 
         <h2>PLAYER PICKED</h2>
-        <button class="btn btn-robot " id="player-selection" >
-            <img src="./style/images/icon-robot.svg" alt="robot">
+        <button class="btn btn-monkey " id="player-selection" >
+            <img src="./style/images/icon-monkey.svg" alt="robot">
         </button>
     </div>
     <div> 
@@ -66,7 +67,14 @@
 
 </section>
 
-   <button class="btn-rules">
+    <div class="rules" id="rules"> 
+         <img class="beat"src="./style/images/BEAT.png" alt="rules-pic">
+         <button id="close"> <img src="./style/images/cancel.png" alt="close"></button>
+   
+</div>
+
+
+   <button class="btn-rules" id="open">
        Rules
    </button>
 

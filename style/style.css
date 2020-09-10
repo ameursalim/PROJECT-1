@@ -136,7 +136,7 @@ width: 200px;
 
 }
 .mr-5{
-    margin-right: 50px;
+margin: 50px;
 }
 
 img{
@@ -144,7 +144,7 @@ img{
     height:60px;
 }
 .pentagone{
-    background-image: url(/style/images/bg-pentagon.svg);
+    background-image: url(./images/bg-pentagon.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color:transparent;
@@ -217,3 +217,34 @@ margin: 50px;
       width: 100%;
     }
   }
+
+
+  .rules{
+      background-color:transparent;
+        display: none;
+        flex-direction: column;
+       justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+width: 100vw;
+height: 100vh;
+margin-top: 155px;
+
+}
+.rules .beat {
+    height: 500px;
+    width: 500px;
+}
+
+.rules button{
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:focus{
+    outline: none;
+}

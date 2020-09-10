@@ -12,10 +12,15 @@ var playerScoreEl= document.getElementById('scoreOne');
 var computerScoreEl= document.getElementById('scoreTwo');
 var pentagone= document.getElementById('pentagone');
 var selectionBox= document.getElementById('selection-box');
-var playAgain= document.getElementById('play-again')
+var playAgain= document.getElementById('play-again');
 var playerSelection= document.getElementById('player-selection');
 var computerSelection= document.getElementById('computer-selection');
 var result= document.getElementById('result');
+
+// rules open close 
+var rules= document.getElementById('rules');
+var openBtn= document.getElementById('open');
+var closeBtn= document.getElementById('close');
 
 
 // var username = prompt("What is your name?");
@@ -45,13 +50,11 @@ function pickRondomChoice(){
  // hide the pentagone and show the selection-box
 
     pentagone.style.display = 'none';
-    selectionBox.style.display = 'flex'
+    selectionBox.style.display = 'flex';
     checkWinner();  
    });
  
 });
-
-
 
 
 
@@ -66,8 +69,20 @@ playAgain.addEventListener("click",() =>{
 });
 
 
+// open and close the rules 
+openBtn.addEventListener("click",() =>{
+
+    rules.style.display = 'flex';
 
 
+});
+
+closeBtn.addEventListener("click",() =>{
+
+    rules.style.display = 'none';
+
+
+});
 
 //  update score number for the player
 
@@ -96,9 +111,8 @@ function checkWinner (){
 
     // updating the selection 
 
-
-    // updateSelectionbox(playerSelection, playerChoice);
-    // updateSelectionbox(computerSelection, computerChoice);
+//    updateSelectionbox(playerSelection, playerChoice);
+//     updateSelectionbox(computerSelection, computerChoice);
     
         if ( playerChoice === computerChoice){
             // draw
@@ -127,7 +141,9 @@ function checkWinner (){
     
 // updating the selection box with the choices
 
-//  function updateSelectionbox ( selectionBox , choice ){
+// var selectionBoxel= document.getElementsByClassName('selection-box');
+
+//  function updateSelectionbox (choice){
 // selectionBox.classlist.remove('btn-robot');
 // selectionBox.classlist.remove('btn-pirate');
 // selectionBox.classlist.remove('btn-ninja');
@@ -136,8 +152,8 @@ function checkWinner (){
 
 // selectionBox.classlist.add(`btn-${choice}`);
 
-// const img=selectionBox.querySelector('img');
-// img.src = `style/images/icon-${choice}.svg`;
+// let img =selectionBox.querySelector('img');
+// img.src =`./images/icon-${choice}.svg`;
 // img.alt= choice;
 //  };
 
