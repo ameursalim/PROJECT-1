@@ -5,7 +5,7 @@ var choice = ["robot", "ninja", "pirate", "monkey", "zombie"];
 var playerChoice = "";
 var playerScore = 0;
 var computerScore = 0;
-
+//------------------------------ audio files -------------------------->
 var buttons = document.querySelectorAll(".choose");
 var playerScoreEl = document.getElementById("scoreOne");
 var computerScoreEl = document.getElementById("scoreTwo");
@@ -21,9 +21,17 @@ var rules = document.getElementById("rules");
 var openBtn = document.getElementById("open");
 var closeBtn = document.getElementById("close");
 
-// var username = prompt("What is your name?");
+//------------------------------ audio files -------------------------->
 
-// console.log(username);
+var youWon = new Audio("audios/you won.mp3");
+var youLost = new Audio("audios/you lost.mp3");
+var draw = new Audio("audios/draw.mp3");
+var pAgain = new Audio("audios/play again.mp3");
+var openRules = new Audio("audios/welcome.mp3");
+var closeRules = new Audio("audios/restart the game.mp3");
+
+
+//------------------------------ computer picking -------------------------->
 
 //  function where the computer is picking a rundom choice  (computer choice)
 
@@ -32,6 +40,7 @@ function pickRondomChoice() {
 }
 //console.log(pickRondomChoice());
 
+//------------------------------ player choice -------------------------->
 // function where the user pick his own choice when he click on it (player choice)
 
 buttons.forEach((button) => {
@@ -51,15 +60,18 @@ buttons.forEach((button) => {
 playAgain.addEventListener("click", () => {
   pentagone.style.display = "flex";
   selectionBox.style.display = "none";
+  pAgain.play();
 });
 
 // open and close the rules
 openBtn.addEventListener("click", () => {
   rules.style.display = "flex";
+  openRules.play();
 });
 
 closeBtn.addEventListener("click", () => {
   rules.style.display = "none";
+  closeRules.play();
 });
 
 //  update score number for the player
@@ -88,7 +100,9 @@ function checkWinner() {
 
   if (playerChoice === computerChoice) {
     // draw
+
     result.innerHTML = "DRAW";
+    draw.play();
   } else if (
     (playerChoice === "robot" &&
       (computerChoice === "ninja" || computerChoice === "zombie")) ||
@@ -103,10 +117,12 @@ function checkWinner() {
   ) {
     updatePlayerScore(1);
     result.innerHTML = "YOU WIN";
+    youWon.play();
   } else {
     // user loose
     updateComputerScore(1);
     result.innerHTML = "YOU LOSE";
+    youLost.play();
   }
 
   console.log(checkWinner);
