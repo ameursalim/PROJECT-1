@@ -88,6 +88,17 @@ function updateComputerScore(value) {
   computerScoreEl.innerHTML = computerScore;
 }
 
+
+
+var restartBtn = document.getElementById("restart"); // Restart the Game Button
+restartBtn.addEventListener("click", function () {
+    pAgain.play();
+    updatePlayerScore();
+    updateComputerScore();
+   
+    playerScoreEl.innerText = 0;
+    computerScoreEl.innerHTML = 0;
+});
 //  the winner function
 
 function checkWinner() {
