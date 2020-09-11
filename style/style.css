@@ -252,7 +252,7 @@ button:focus{
     outline: none;
 }
 
-/* .btn-restart{
+.btn-restart{
     border: 2px solid white;
     border-radius: 5px;
     min-width: 150px;
@@ -268,4 +268,4 @@ button:focus{
     position: fixed;
     bottom: 20px;
     left: 30px;
-} */
+}
